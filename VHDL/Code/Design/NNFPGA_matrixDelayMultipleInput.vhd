@@ -1,6 +1,6 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_matrixDelayMultipleInput.vhd
 --
--- Storage for a nxn arry for filter
+-- Storage for a nxn arry for of multiple std_logic_vector of variable size 
 --
 -- (c) Christian Woznik
 library IEEE;

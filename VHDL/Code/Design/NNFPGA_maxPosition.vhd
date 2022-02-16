@@ -1,7 +1,10 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_maxPosition.vhd
 --
 -- Calculates the maximum to determine the class of the object via treesearch
--- Needs to be piplined due to timing problems 
+-- Can to be piplined to solve timing problems 
+
+-- toDo: at negative values disable piplining completly
+-- workaround: just set the pipleline distance to an high number
 --
 -- (c) Christian Woznik
 library IEEE;

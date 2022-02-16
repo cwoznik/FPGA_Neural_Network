@@ -1,6 +1,7 @@
--- NNFPGA_staticMultiplier
+-- NNFPGA_layer.vhd
 --
--- Neuron module for the neural network
+-- This module instantiates the individual neurons for the network
+-- for that it splits the weights array for each neuron
 --
 -- (c) Christian Woznik
 

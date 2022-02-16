@@ -1,6 +1,7 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_Encoding2RGB.vhd
 --
--- Calculates the maximum to determine the class of the object via treesearch
+-- Creates RGB value from an integer value for the output 
+-- ToDo: change so it is configurable via generics
 --
 -- (c) Christian Woznik
 library IEEE;

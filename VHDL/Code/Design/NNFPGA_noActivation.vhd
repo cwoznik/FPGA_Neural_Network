@@ -1,4 +1,4 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_noActivation.vhd
 --
 -- No activation function
 --

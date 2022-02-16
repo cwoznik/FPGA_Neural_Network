@@ -1,6 +1,7 @@
--- NNFPGA_staticMultiplier
+-- NNFPGA_neuron
 --
--- Neuron module for the neural network
+-- Neuron module for the neural network. Contains the Multiplicators for the weights, Adder and 
+-- activation function. 
 --
 -- (c) Christian Woznik
 

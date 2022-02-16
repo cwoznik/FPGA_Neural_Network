@@ -1,6 +1,8 @@
 -- NNFPGA_networkImporter
 --
 -- imports the network weights and information from a text file
+-- can not be used with Intel Qartus Prime as TextIO is disabled during synthesis
+-- should be used for Xilinx Vivado
 --
 -- (c) Christian Woznik
 library IEEE;

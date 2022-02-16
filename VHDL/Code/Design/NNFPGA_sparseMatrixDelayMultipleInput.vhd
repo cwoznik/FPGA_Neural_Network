@@ -1,6 +1,8 @@
 -- NNFPGA_sparseMatrixDelayMultipleInput.vhd
 --
--- 
+-- This module implements a NNFPGA_matrixDelayMultipleInput however as we do not need all values
+-- in this project we do not care about most of the outputs. This module reduces the output size
+-- to the required values for easier handling
 --
 -- (c) Christian Woznik
 library IEEE;

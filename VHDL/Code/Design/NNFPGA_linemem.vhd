@@ -5,7 +5,7 @@
 -- FPGA Vision Remote Lab http://h-brs.de/fpga-vision-lab
 -- (c) Marco Winzker, Hochschule Bonn-Rhein-Sieg, 03.01.2018
 
--- expanded by Christian Woznik
+-- expanded by Christian Woznik to allow generics and thus more configurability 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;

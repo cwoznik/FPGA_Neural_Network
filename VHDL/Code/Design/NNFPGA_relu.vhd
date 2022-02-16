@@ -1,4 +1,4 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_relu.vhd
 --
 -- Activation funktion Relu 
 --          x if x > 0

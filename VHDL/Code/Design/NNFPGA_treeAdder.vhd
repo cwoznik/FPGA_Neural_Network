@@ -1,4 +1,4 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_treeAdder.vhd
 --
 -- tree adder with generic input size and multiplications 
 --

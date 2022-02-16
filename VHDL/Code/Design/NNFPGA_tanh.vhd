@@ -1,4 +1,4 @@
--- NNFPGA_oneShift.vhd
+-- NNFPGA_tanh.vhd
 --
 -- LUT for the activation funktion sigmoid
 --

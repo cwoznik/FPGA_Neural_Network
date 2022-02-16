@@ -1,6 +1,8 @@
--- NNFPGA_staticMultiplier
+-- NNFPGA_neuralNetwork
 --
--- Neuron module for the neural network
+-- Neural Network module that instantiates all the layers and represents a complete 
+-- network however without output layer. As it is required that we can get the raw
+-- network output for this project in the next network
 --
 -- (c) Christian Woznik
 

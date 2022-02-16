@@ -1,6 +1,8 @@
 -- NNFPGA.vhd
 --
--- top level
+-- top level module that implements the entire fpga design for this project
+--
+-- (c) Christian Woznik
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
@@ -74,6 +76,7 @@ begin
 		bBuffer 	<= b_in;
 	end process;
 
+  --convert the RGB inputs to greyscale values for this project
   rgb2grey : entity work.NNFPGA_rgb2grey
     generic map(inputDataSize   => 8,
                 outputDataSize  => c_DataWidth)
@@ -86,6 +89,7 @@ begin
 
               dataOut	=> greyIn); 
 
+  --we need a 7x7 input so we delay the input and store it in this martix 
   inputDelay : entity work.NNFPGA_matrixDelay
       generic map(n				  	=> c_InputShape,
                   dataWidth 	  	=> c_DataWidth,
@@ -98,6 +102,7 @@ begin
                 
                 dataOut => firstNetworkDataIn);
   
+  --the first network that is used to classify the subshapes 
   firstNetwork : entity work.NNFPGA_neuralNetwork
       generic map(dataWidth 			    => c_DataWidth,
                   fixedPointPos		    => c_FixedPointPos,
@@ -111,6 +116,7 @@ begin
                 dataIn	    => firstNetworkDataIn,
                 dataOut		  => firstNetworkDataOut); 
 
+  --the second network needs again a matrix. This time a 3x3. 
   interNetworkDelay_1 : entity work.NNFPGA_sparseMatrixDelayMultipleInput
         generic map(n				  	    => 15,
                     inputCount      => c_networkfirstModelLayerInformation(c_networkfirstModelLayerInformation'length-1).neuronCount,
@@ -124,7 +130,8 @@ begin
                   dataIn	=> firstNetworkDataOut,
                   
                   dataOut => secondNetworkDataIn);     
-                  
+              
+  --run the second network to get a final classification                
   secondNetwork : entity work.NNFPGA_neuralNetwork
         generic map(dataWidth 			    => c_DataWidth,
                     fixedPointPos		    => c_FixedPointPos,
@@ -138,6 +145,8 @@ begin
  						dataIn	    => secondNetworkDataIn,
                   dataOut		  => secondNetworkDataOut); 
 
+  --we only have the raw network output so we need to find the maximal value and thus the 
+  --detected class
   maxPos : entity work.NNFPGA_maxPosition 
         generic map( inputCount 	      => secondNetworkDataOut'length,
                   dataWidth		      => c_DataWidth,
@@ -147,6 +156,7 @@ begin
                 dataIn		=> secondNetworkDataOut,
                 dataOut 	=> detectedClass);
 
+  --the class is just an integer. to display it we need to convert it to an RGB value
   encoder : entity work.NNFPGA_Encoding2RGB 
         port map(clk       => clk,											
             
