@@ -37,7 +37,7 @@ begin
 	begin
 		if rising_edge(clk) then
 			-- if reset is enabled dataOut should be all 0
-			if (rst) then 
+			if (rst = '1') then 
 				dataOut <= (others => '0');
 			else
 				--instead of using multiplications approximate the weighted averaging with shifts. Wighted average is 0.21R+0,72G+0,07B

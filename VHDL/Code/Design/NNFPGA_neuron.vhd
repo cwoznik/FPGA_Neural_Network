@@ -39,7 +39,8 @@ end NNFPGA_neuron;
 architecture behave of NNFPGA_neuron is	
 	constant multiplierDataOutputWidth 	: integer := 2*inputDataWidth-fixedpointPos;
 	constant treeadderDataOuputWidth	: integer := multiplierDataOutputWidth + integer(ceil(log2(real(weightsArray'length))));
-	constant treeaderPipelineDistance 	: integer := 8;
+	--todo: Move that into constraints!!!
+	constant treeaderPipelineDistance 	: integer := 2;
 
 	signal multipierDataOut 		: t_variableSizeLogicVectorArray(0 to weightsArray'length-1)(multiplierDataOutputWidth-1 downto 0) := (others=>(others => '0'));
 	signal treeadderDataOut 		: std_logic_vector(treeadderDataOuputWidth-1 downto 0) := (others => '0');

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Feb 23 00:52:06 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : NNFPGA_CL10LP
+Top-level Entity Name : NNFPGA_CL10LP
+Family : Cyclone 10 LP
+Total logic elements : 21,569
+    Total combinational functions : 18,530
+    Dedicated logic registers : 8,600
+Total registers : 8600
+Total pins : 63
+Total virtual pins : 0
+Total memory bits : 1,065,164
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

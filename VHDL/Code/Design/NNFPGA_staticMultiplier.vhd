@@ -41,7 +41,7 @@ begin
 
 		if rising_edge(clk) then
 			-- if reset is enabled dataOut should be all 0
-			if (rst) then 
+			if (rst = '1') then 
 				dataOut <= (others => '0');
 			else
 				--do a multiplication of the input with the fixed factor
