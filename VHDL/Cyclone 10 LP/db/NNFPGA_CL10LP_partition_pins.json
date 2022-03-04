@@ -136,47 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "g_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "r_in[7]",
-					"strict" : false
-				},
-				{
-					"name" : "g_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "r_in[6]",
-					"strict" : false
-				},
-				{
-					"name" : "g_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "r_in[5]",
-					"strict" : false
-				},
-				{
-					"name" : "g_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "r_in[4]",
-					"strict" : false
-				},
-				{
-					"name" : "g_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "r_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "g_in[2]",
+					"name" : "r_in[1]",
 					"strict" : false
 				},
 				{
@@ -184,15 +144,39 @@
 					"strict" : false
 				},
 				{
-					"name" : "g_in[1]",
+					"name" : "r_in[3]",
 					"strict" : false
 				},
 				{
-					"name" : "b_in[7]",
+					"name" : "r_in[4]",
 					"strict" : false
 				},
 				{
-					"name" : "b_in[6]",
+					"name" : "r_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "r_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "r_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[4]",
 					"strict" : false
 				},
 				{
@@ -200,7 +184,39 @@
 					"strict" : false
 				},
 				{
-					"name" : "b_in[4]",
+					"name" : "b_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "b_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "g_in[7]",
 					"strict" : false
 				}
 			]

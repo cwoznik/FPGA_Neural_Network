@@ -1,16 +1,16 @@
-Fitter Status : Successful - Wed Feb 23 00:53:39 2022
+Fitter Status : Successful - Thu Mar 03 19:09:13 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : NNFPGA_CL10LP
 Top-level Entity Name : NNFPGA_CL10LP
 Family : Cyclone 10 LP
 Device : 10CL120YF484I7G
 Timing Models : Final
-Total logic elements : 20,450 / 119,088 ( 17 % )
-    Total combinational functions : 18,531 / 119,088 ( 16 % )
-    Dedicated logic registers : 7,768 / 119,088 ( 7 % )
-Total registers : 7768
+Total logic elements : 20,699 / 119,088 ( 17 % )
+    Total combinational functions : 18,790 / 119,088 ( 16 % )
+    Dedicated logic registers : 7,866 / 119,088 ( 7 % )
+Total registers : 7866
 Total pins : 63 / 278 ( 23 % )
 Total virtual pins : 0
-Total memory bits : 1,065,164 / 3,981,312 ( 27 % )
+Total memory bits : 1,511,634 / 3,981,312 ( 38 % )
 Embedded Multiplier 9-bit elements : 0 / 576 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

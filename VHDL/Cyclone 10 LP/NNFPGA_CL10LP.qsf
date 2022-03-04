@@ -187,6 +187,8 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name OPTIMIZATION_MODE BALANCED
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name VHDL_FILE ../Code/Design/NNFPGA_stdLogicDelay.vhd
+set_global_assignment -name VHDL_FILE ../Code/Design/NNFPGA_imageClassificationCombiner.vhd
 set_global_assignment -name SDC_FILE NNFPGA_CL10LP.sdc
 set_global_assignment -name VHDL_FILE ../Code/Design/NNFPGA_treeAdder.vhd
 set_global_assignment -name VHDL_FILE ../Code/Design/NNFPGA_tanh.vhd
@@ -211,4 +213,6 @@ set_global_assignment -name VHDL_FILE ../Code/Design/NNFPGA_Encoding2RGB.vhd
 set_global_assignment -name VHDL_FILE ../Code/Design/NNFFPGA_Network_secondModel_statics.vhd
 set_global_assignment -name VHDL_FILE ../Code/Design/NNFFPGA_Network_firstModel_statics.vhd
 set_global_assignment -name VHDL_FILE NNFPGA_CL10LP.vhd
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

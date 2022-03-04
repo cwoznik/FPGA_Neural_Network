@@ -487,16 +487,17 @@ def main():
     #face.exportFacesForTraining(10000,True, 1, 0.1,False,path)
     #face.exportFacesForTraining(10000,True, 1, 0.2,False,path)
     #face.exportFacesForTraining(10000,True, 1, 0.3,False,path)
-    face.exportSubshapesForTraining(100000,False,1,0,False,path)
-    face.exportSubshapesForTraining(100000,False,1,0.1,False,path)
-    face.exportSubshapesForTraining(100000,False,1,0.2,False,path)
-    face.exportSubshapesForTraining(100000,False,1,0.3,False,path)
+    #face.exportSubshapesForTraining(100000,False,1,0,False,path)
+    #face.exportSubshapesForTraining(100000,False,1,0.1,False,path)
+    #face.exportSubshapesForTraining(100000,False,1,0.2,False,path)
+    #face.exportSubshapesForTraining(100000,False,1,0.3,False,path)
     #face.exportSubshapesForValidation(10000,5,0.05,False,path)
     #face.exportSubshapesForValidationAsImage(random.randint(0,5),20,0.02,False,path)
 
-    # face.fillCanvasWithRandomImages(50)
+    face.fillCanvasWithRandomImages(50)
     # face.saveCanvasAsFrame(path+"\\test.jpg",False)
-    #face.createVideo(100,path,[ {"startframe":50,"stopframe":75,"noisePercentage":0.05},{"startframe":75,"stopframe":100,"noisePercentage":0.25}],False)
+    face.createVideo(450,path,[ {"startframe":100,"stopframe":200,"noisePercentage":0.05},{"startframe":200,"stopframe":300,"noisePercentage":0.125}
+                                ,{"startframe":300,"stopframe":450,"noisePercentage":0.25}],False)
 
 
 

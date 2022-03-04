@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10CL120YF484) Path("C:/Users/Unknown/Documents/FPGA_Neural_Network/VHDL/Cyclone 10 LP/output_files/") File("NNFPGA_CL10LP.sof") MfrSpec(OpMask(1));
+		Device PartName(10CL120YF484) Path("C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Cyclone 10 LP/output_files/") File("NNFPGA_CL10LP.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

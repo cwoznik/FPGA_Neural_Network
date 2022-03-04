@@ -42,21 +42,23 @@ end NNFPGA_CL10LP;
 architecture behave of NNFPGA_CL10LP is
 
 	-- input/output FFs
-	signal reset            			   : std_logic;
-	signal enable           			   : std_logic_vector(2 downto 0);
-	signal rgb_out  						   : std_logic_vector(23 downto 0);
-	signal rBuffer, gBuffer, bBuffer  	: std_logic_vector(7 downto 0);
-	signal greyIn			   			   : std_logic_vector(c_DataWidth-1 downto 0);
-	signal vs_0, hs_0, de_0 			   : std_logic;
-	signal vs_1, hs_1, de_1 			   : std_logic;
+	signal reset            			    : std_logic;
+	signal enable           			    : std_logic_vector(2 downto 0);
+	signal rgb_out  						      : std_logic_vector(23 downto 0);
+  signal finalDataOut               : std_logic_vector(23 downto 0);
+	signal rBuffer, gBuffer, bBuffer  : std_logic_vector(7 downto 0);
+	signal greyIn			   			        : std_logic_vector(c_DataWidth-1 downto 0);
+	signal vs_0, hs_0, de_0 			    : std_logic;
+	signal vs_1, hs_1, de_1 			    : std_logic;
+  signal wrEnInternetworkDelay      : std_logic;
 	
 	signal firstNetworkDataIn 				: t_variableSizeLogicVectorArray(0 to (c_InputShape**2)-1)(c_DataWidth-1 downto 0);
 	signal firstNetworkDataOut				: t_variableSizeLogicVectorArray(0 to c_networkfirstModelLayerInformation(c_networkfirstModelLayerInformation'length-1).neuronCount-1)(c_DataWidth-1 downto 0);
 
-   signal secondNetworkDataIn 			: t_variableSizeLogicVectorArray(0 to (c_networksecondModelLayerInformation(0).inputCount-1))(c_DataWidth-1 downto 0);
-	signal secondNetworkDataOut			: t_variableSizeLogicVectorArray(0 to c_networksecondModelLayerInformation(c_networksecondModelLayerInformation'length-1).neuronCount-1)(c_DataWidth-1 downto 0);
+  signal secondNetworkDataIn 			  : t_variableSizeLogicVectorArray(0 to (c_networksecondModelLayerInformation(0).inputCount-1))(c_DataWidth-1 downto 0);
+	signal secondNetworkDataOut			  : t_variableSizeLogicVectorArray(0 to c_networksecondModelLayerInformation(c_networksecondModelLayerInformation'length-1).neuronCount-1)(c_DataWidth-1 downto 0);
 
-   signal detectedClass              	: integer; 
+  signal detectedClass              : integer; 
  
 begin  
 	process
@@ -65,12 +67,12 @@ begin
 		wait until rising_edge(clk);
 
 		-- input FFs for control
-		reset  	<= not reset_n;
-		enable 	<= enable_in;
+		reset  	  <= not reset_n;
+		enable 	  <= enable_in;
 		-- input FFs for video signal
-		vs_0   	<= vs_in;
-		hs_0   	<= hs_in;
-		de_0   	<= de_in;
+		vs_0   	  <= vs_in;
+		hs_0   	  <= hs_in;
+		de_0   	  <= de_in;
 		rBuffer 	<= r_in;
 		gBuffer 	<= g_in;
 		bBuffer 	<= b_in;
@@ -116,6 +118,16 @@ begin
                 dataIn	    	=> firstNetworkDataIn,
                 dataOut		  	=> firstNetworkDataOut); 
 
+  -- we need to delay the write enable for the inter network delay
+
+  enableDelayInterNetwork : entity work.NNFPGA_stdLogicDelay
+        generic map(delay => 9927) --1 (rgb2grey) + 6*1650+14 (delay of input matrix ) + 12 (delay network)
+        port map(	clk     => clk,
+						reset   => reset,
+						dataIn  => de_0,
+						dataOut => wrEnInternetworkDelay);
+
+
   --the second network needs again a matrix. This time a 3x3. 
   interNetworkDelay_1 : entity work.NNFPGA_sparseMatrixDelayMultipleInput
         generic map(n				  	    => 15,
@@ -125,7 +137,7 @@ begin
                     outputDim       => 3)
         port map( clk     	=> clk,
                   rst		=> reset,
-                  wrEn		=> de_0,
+                  wrEn		=> wrEnInternetworkDelay,
             
                   dataIn	=> firstNetworkDataOut,
                   
@@ -163,10 +175,24 @@ begin
             
               dataIn		=> detectedClass,
               rgbOut 		=> rgb_out);
+
+  imageCombiner : entity work.NNFPGA_imageClassificationCombiner
+  generic map(dataWidth 			=> 8,
+              colorChannels   => 3,
+              delayClocks     => 16545, 
+              mixBitStart     => 7,
+              mixBitStop      => 7) 
+  port map( clk        	          => clk, 
+            rst			              => reset,  	
+
+            imageDataIn           => rBuffer & bBuffer & gBuffer, 
+            classificationDataIn  => rgb_out, 
+
+            dataOut		            => finalDataOut);
             
   -- delay control signals to match pipeline stages of signal processing
   control : entity work.NNFPGA_sync
-    generic map (delay => 57)
+    generic map (delay => 33055) 
     port map (clk    => clk,
               reset  => reset,
               vs_in  => vs_0,
@@ -186,9 +212,9 @@ begin
     de_out <= de_1;
     if (de_1 = '1') then
       -- active video
-      r_out <= rgb_out(23 downto 16);
-      g_out <= rgb_out(15 downto 8);
-      b_out <= rgb_out(7 downto 0);
+      r_out <= finalDataOut(23 downto 16);
+      g_out <= finalDataOut(15 downto 8);
+      b_out <= finalDataOut(7 downto 0);
 
     else
       -- blanking, set output to black

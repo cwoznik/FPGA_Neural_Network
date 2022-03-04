@@ -1,0 +1,209 @@
+# Reading pref.tcl
+# do NNFPGA_CL10LP_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:06 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_stdLogicDelay
+# -- Compiling architecture behave of NNFPGA_stdLogicDelay
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity NNFPGA_tanh
+# -- Compiling architecture lut of NNFPGA_tanh
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_sync
+# -- Compiling architecture behave of NNFPGA_sync
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package NNFPGA_statics
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_staticMultiplier
+# -- Compiling architecture behave of NNFPGA_staticMultiplier
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity NNFPGA_sigmoid
+# -- Compiling architecture lut of NNFPGA_sigmoid
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_rgb2grey
+# -- Compiling architecture behave of NNFPGA_rgb2grey
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity NNFPGA_relu
+# -- Compiling architecture behave of NNFPGA_relu
+# End time: 15:32:07 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:07 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package NNFPGA_pkg
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity NNFPGA_noActivation
+# -- Compiling architecture behave of NNFPGA_noActivation
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_linemem
+# -- Compiling architecture behave of NNFPGA_linemem
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity NNFPGA_Encoding2RGB
+# -- Compiling architecture behave of NNFPGA_Encoding2RGB
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package NNFPGA_pkg
+# -- Compiling entity NNFPGA_imageClassificationCombiner
+# -- Compiling architecture behave of NNFPGA_imageClassificationCombiner
+# -- Loading entity NNFPGA_linemem
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package NNFPGA_pkg
+# -- Compiling entity NNFPGA_treeAdder
+# -- Compiling architecture behave of NNFPGA_treeAdder
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:32:08 on Mar 03,2022
+# vcom -reportprogress 300 -2008 -work work C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package NNFPGA_pkg
+# -- Compiling entity NNFPGA_sparseMatrixDelayMultipleInput
+# -- Compiling architecture behave of NNFPGA_sparseMatrixDelayMultipleInput
+# ** Error: (vcom-11) Could not find work.nnfpga_matrixdelaymultipleinput.
+# ** Error (suppressible): C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd(42): (vcom-1195) Cannot find expanded name "work.NNFPGA_matrixDelayMultipleInput".
+# ** Error: C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd(42): Unknown expanded name.
+# ** Note: C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd(84): VHDL Compiler exiting
+# End time: 15:32:08 on Mar 03,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./NNFPGA_CL10LP_run_msim_rtl_vhdl.do line 22
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -2008 -work work {C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd}"

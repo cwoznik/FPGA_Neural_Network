@@ -1,0 +1,614 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Cyclone 10 LP/simulation/modelsim
+Ennfpga_encoding2rgb
+Z1 w1646057211
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+R0
+Z5 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd
+Z6 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd
+l0
+Z7 L11 1
+V>o<SoiU_DJjM1okU[6OMo0
+!s100 lkY>=27[AJ[`nLcfYE3Z`1
+Z8 OV;C;2020.1;71
+33
+Z9 !s110 1646317928
+!i10b 1
+Z10 !s108 1646317928.000000
+Z11 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd|
+Z12 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_Encoding2RGB.vhd|
+!i113 1
+Z13 o-2008 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+R4
+DEx4 work 19 nnfpga_encoding2rgb 0 22 >o<SoiU_DJjM1okU[6OMo0
+!i122 11
+l37
+L20 27
+V3VK7kTonLNUgkilN[zT2l1
+!s100 nUTY>N`dYQJLVBJolbhDI0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ennfpga_imageclassificationcombiner
+Z15 w1646305864
+Z16 DPx4 work 10 nnfpga_pkg 0 22 T[S4a4LBYn?Ya@?[lizZm3
+Z17 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R2
+R3
+R4
+!i122 12
+R0
+Z18 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd
+Z19 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd
+l0
+L22 1
+V9UhQ5FO<e?FJbmdjD5;][2
+!s100 BA:JY;6eD5ARQd2;;:X]e1
+R8
+33
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd|
+Z21 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_imageClassificationCombiner.vhd|
+!i113 1
+R13
+R14
+Abehave
+Z22 DEx4 work 14 nnfpga_linemem 0 22 ?CB?DcJdRRg[UfCb3[kmc1
+R16
+R17
+R2
+R3
+R4
+DEx4 work 34 nnfpga_imageclassificationcombiner 0 22 9UhQ5FO<e?FJbmdjD5;][2
+!i122 12
+l47
+L40 57
+VozzQTZPMe0j8[bhS^AC7B2
+!s100 V^B6IaV]^h197z26KzhPP0
+R8
+33
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Ennfpga_linemem
+R1
+R2
+R3
+R4
+!i122 10
+R0
+Z23 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd
+Z24 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd
+l0
+Z25 L14 1
+V?CB?DcJdRRg[UfCb3[kmc1
+!s100 RI34>X]K1nDbR0@Ggg3>E3
+R8
+33
+R9
+!i10b 1
+R10
+Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd|
+Z27 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_linemem.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+R22
+!i122 10
+l31
+L24 35
+VmoZY<4;[91U0HOWI3PzE^3
+!s100 lb2b]P>2@zWKbAi<B`KQ93
+R8
+33
+R9
+!i10b 1
+R10
+R26
+R27
+!i113 1
+R13
+R14
+Ennfpga_noactivation
+R1
+R17
+R2
+R3
+R4
+!i122 9
+R0
+Z28 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd
+Z29 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd
+l0
+R7
+Vim[Ijg2[RSSZoe<4XGDL62
+!s100 [`Oc92Q88`G0bAo=jZGbY0
+R8
+33
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd|
+Z31 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_noActivation.vhd|
+!i113 1
+R13
+R14
+Abehave
+R17
+R2
+R3
+R4
+DEx4 work 19 nnfpga_noactivation 0 22 im[Ijg2[RSSZoe<4XGDL62
+!i122 9
+l31
+L25 26
+VGna1FTZaDh>aN[XXm5F];3
+!s100 UERMDFfdZ@<5iQOIQNSZC1
+R8
+33
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Pnnfpga_pkg
+R2
+R3
+R4
+!i122 8
+R1
+R0
+8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd
+FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd
+l0
+Z32 L12 1
+VT[S4a4LBYn?Ya@?[lizZm3
+!s100 oF?X`Gec@CL;0h03i?MoY0
+R8
+33
+R9
+!i10b 1
+Z33 !s108 1646317927.000000
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd|
+!s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_pkg.vhd|
+!i113 1
+R13
+R14
+Ennfpga_relu
+R1
+R17
+R2
+R3
+R4
+!i122 7
+R0
+Z34 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd
+Z35 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd
+l0
+L13 1
+VajHUe:4H[`O`MGP_ncS1a3
+!s100 [7j8`m3G0[WMG5:X>@@:W0
+R8
+33
+Z36 !s110 1646317927
+!i10b 1
+R33
+Z37 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd|
+Z38 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_relu.vhd|
+!i113 1
+R13
+R14
+Abehave
+R17
+R2
+R3
+R4
+DEx4 work 11 nnfpga_relu 0 22 ajHUe:4H[`O`MGP_ncS1a3
+!i122 7
+l31
+L27 26
+V15Q[8S173D1;K14UQCR4a3
+!s100 cnNdcM92h;ZE>0929:]]S2
+R8
+33
+R36
+!i10b 1
+R33
+R37
+R38
+!i113 1
+R13
+R14
+Ennfpga_rgb2grey
+Z39 w1646062118
+R2
+R3
+R4
+!i122 6
+R0
+Z40 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd
+Z41 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd
+l0
+R32
+V<7TTa7;Km:SWX5[i6ZPFj1
+!s100 `]1jj`3^HRaI8mc13R]FH2
+R8
+33
+R36
+!i10b 1
+R33
+Z42 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd|
+Z43 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_rgb2grey.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+DEx4 work 15 nnfpga_rgb2grey 0 22 <7TTa7;Km:SWX5[i6ZPFj1
+!i122 6
+l33
+L32 34
+VUU@_WPRNm_J`I[k;XDbnI0
+!s100 VSe8^A_RmC1cY<HjmH2J91
+R8
+33
+R36
+!i10b 1
+R33
+R42
+R43
+!i113 1
+R13
+R14
+Ennfpga_sigmoid
+R1
+R17
+R2
+R3
+R4
+!i122 5
+R0
+Z44 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd
+Z45 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd
+l0
+R25
+V?3Qb<@<cJ9?CV371I;OU31
+!s100 dj^<OeglVh:0LOf:NWWK[1
+R8
+33
+R36
+!i10b 1
+R33
+Z46 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd|
+Z47 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sigmoid.vhd|
+!i113 1
+R13
+R14
+Alut
+R17
+R2
+R3
+R4
+DEx4 work 14 nnfpga_sigmoid 0 22 ?3Qb<@<cJ9?CV371I;OU31
+!i122 5
+l37
+Z48 L29 39
+VB4=EkJW5i^jL2Cb3?^g4R0
+!s100 1>A1Kn<3X8SQeO;jPeT`n2
+R8
+33
+R36
+!i10b 1
+R33
+R46
+R47
+!i113 1
+R13
+R14
+Ennfpga_sparsematrixdelaymultipleinput
+R1
+R16
+R2
+R3
+R4
+!i122 14
+R0
+8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd
+FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd
+l0
+L15 1
+Vn7YN@80n7mQRo9zj2h[Mb1
+!s100 FGZnJ_N0BUzgf^NjSeO2R1
+R8
+33
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd|
+!s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sparseMatrixDelayMultipleInput.vhd|
+!i113 1
+R13
+R14
+Ennfpga_staticmultiplier
+R39
+R2
+R3
+R4
+!i122 4
+R0
+Z49 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd
+Z50 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd
+l0
+R32
+VIGCeY@_R?S^@:EUO412^`2
+!s100 ]]6fM1;7hi<aWF_]FKl[M3
+R8
+33
+R36
+!i10b 1
+R33
+Z51 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd|
+Z52 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_staticMultiplier.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+DEx4 work 23 nnfpga_staticmultiplier 0 22 IGCeY@_R?S^@:EUO412^`2
+!i122 4
+l34
+L31 26
+VDcj@5i8<4P:nZ;P@iQC:E0
+!s100 UjjN8e4PAV[5TRYWY1bY32
+R8
+33
+R36
+!i10b 1
+R33
+R51
+R52
+!i113 1
+R13
+R14
+Pnnfpga_statics
+R2
+R3
+R4
+!i122 3
+R1
+R0
+8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd
+FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd
+l0
+L7 1
+VjbBJUCbfm?E<hZeT9aHX=0
+!s100 8fYf;?nonDKSc;h;4nFiA1
+R8
+33
+R36
+!i10b 1
+R33
+!s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd|
+!s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_statics.vhd|
+!i113 1
+R13
+R14
+Ennfpga_stdlogicdelay
+Z53 w1646316579
+R2
+R3
+R4
+!i122 0
+R0
+Z54 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd
+Z55 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd
+l0
+R7
+VBdO_P3dVX`[dIg<ZVmc<W2
+!s100 j_AK;_aZMO6jW`iXKcMR23
+R8
+33
+R36
+!i10b 1
+Z56 !s108 1646317926.000000
+Z57 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd|
+Z58 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_stdLogicDelay.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+DEx4 work 20 nnfpga_stdlogicdelay 0 22 BdO_P3dVX`[dIg<ZVmc<W2
+!i122 0
+l25
+L19 26
+Vl099nA@b8mNUk0AHIDHE@0
+!s100 cinCdSEEXWe5?^_9lS5zT1
+R8
+33
+R36
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R13
+R14
+Ennfpga_sync
+R1
+R2
+R3
+R4
+!i122 2
+R0
+Z59 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd
+Z60 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd
+l0
+R25
+VzDNKY8RViIKQD0@WHRb7N1
+!s100 Hh3MYcDJ_38^SHF:7oGh^0
+R8
+33
+R36
+!i10b 1
+R33
+Z61 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd|
+Z62 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_sync.vhd|
+!i113 1
+R13
+R14
+Abehave
+R2
+R3
+R4
+DEx4 work 11 nnfpga_sync 0 22 zDNKY8RViIKQD0@WHRb7N1
+!i122 2
+l34
+L26 34
+V2zEUOfk:D>ngeWKRI[:bZ0
+!s100 bUYN2cm1I8SIT088<lm5g1
+R8
+33
+R36
+!i10b 1
+R33
+R61
+R62
+!i113 1
+R13
+R14
+Ennfpga_tanh
+R1
+R17
+R2
+R3
+R4
+!i122 1
+R0
+Z63 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd
+Z64 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd
+l0
+R25
+V2?JASn4kVRL:jm<nU>7c71
+!s100 ;]NPW<8T6<L88gF^YLN9;3
+R8
+33
+R36
+!i10b 1
+R33
+Z65 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd|
+Z66 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_tanh.vhd|
+!i113 1
+R13
+R14
+Alut
+R17
+R2
+R3
+R4
+DEx4 work 11 nnfpga_tanh 0 22 2?JASn4kVRL:jm<nU>7c71
+!i122 1
+l37
+R48
+VVck90_aC5ZoIEhP:`^<4@2
+!s100 `]2;VK_H_5]k9>L`m;:;83
+R8
+33
+R36
+!i10b 1
+R33
+R65
+R66
+!i113 1
+R13
+R14
+Ennfpga_treeadder
+R1
+R16
+R17
+R2
+R3
+R4
+!i122 13
+R0
+Z67 8C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd
+Z68 FC:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd
+l0
+L18 1
+V8Sf?@n0E2E11FH=amLO1_1
+!s100 <4mkoU^8O1a]D59AJz21^0
+R8
+33
+R9
+!i10b 1
+R10
+Z69 !s90 -reportprogress|300|-2008|-work|work|C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd|
+Z70 !s107 C:/Users/Unknown/Documents/FPGA_Neural_Network-1/VHDL/Code/Design/NNFPGA_treeAdder.vhd|
+!i113 1
+R13
+R14
+Abehave
+R16
+R17
+R2
+R3
+R4
+DEx4 work 16 nnfpga_treeadder 0 22 8Sf?@n0E2E11FH=amLO1_1
+!i122 13
+l43
+L35 49
+Vz4Ml@hGk2WzJj?_:Chgfa3
+!s100 HR1C?`Zg189H;jzbPTHi:2
+R8
+33
+R9
+!i10b 1
+R10
+R69
+R70
+!i113 1
+R13
+R14
